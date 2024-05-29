@@ -11,9 +11,10 @@ export const StateContext = createContext(null);
 
 export const STORED_STATE_KEY = "profileMeLocalStateMar24";
 
-const PROJECT_URL = process.env.NODE_ENV === 'production'
-  ? 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public'
-  : 'http://localhost:3000'
+const PROJECT_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public"
+    : "http://localhost:3000";
 
 // Icon Store
 export const iconData = {
@@ -298,6 +299,14 @@ export const iconData = {
       iTag: "remix",
       link: "https://remix.run/",
     },
+    {
+      name: "Astro",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/astro-colored.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/astro-dark.svg",
+      iTag: "astro",
+      link: "https://astro.build/",
+    },
   ],
   backend: [
     {
@@ -369,12 +378,6 @@ export const iconData = {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/appwrite-colored-dark.svg",
       iTag: "appwrite",
       link: "https://appwrite.io/",
-    },
-    {
-      name: "Heroku",
-      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg",
-      iTag: "heroku",
-      link: "https://www.heroku.com/",
     },
     {
       name: "Flask",
@@ -449,6 +452,22 @@ export const iconData = {
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sketch-colored.svg",
       iTag: "sketch",
       link: "https://www.sketch.com/",
+    },
+  ],
+  mobile: [
+    {
+      name: "Flutter",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flutter-colored.svg",
+      iTag: "flutter",
+      link: "https://flutter.dev/",
+    },
+    {
+      name: "NativeScript",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nativescript-colored.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nativescript-colored-dark.svg",
+      iTag: "nativescript",
+      link: "https://nativescript.org/",
     },
   ],
   web3: [
@@ -605,10 +624,30 @@ export const iconData = {
   ],
   cloud: [
     {
+      name: "Amazon Web Services",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored-dark.svg",
+      iTag: "aws",
+      link: "https://aws.amazon.com",
+    },
+    {
+      name: "Digital Ocean",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/digitalocean-colored.svg",
+      iTag: "digitalocean",
+      link: "https://www.digitalocean.com",
+    },
+    {
       name: "Google Cloud",
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg",
       iTag: "googlecloud",
       link: "https://cloud.google.com/",
+    },
+    {
+      name: "Heroku",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg",
+      iTag: "heroku",
+      link: "https://www.heroku.com/",
     },
   ],
   cms: [
@@ -636,6 +675,22 @@ export const iconData = {
       iTag: "wix",
       link: "https://wix.com",
     },
+    {
+      name: "Webflow",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webflow-colored.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webflow-dark.svg",
+      iTag: "webflow",
+      link: "https://webflow.com/",
+    },
+    {
+      name: "Weebly",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/weebly-colored.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/weebly-dark.svg",
+      iTag: "weebly",
+      link: "https://www.weebly.com/",
+    },
   ],
   other: [
     {
@@ -659,20 +714,6 @@ export const iconData = {
       link: "https://laravel.com/",
     },
     {
-      name: "Flutter",
-      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flutter-colored.svg",
-      iTag: "flutter",
-      link: "https://flutter.dev/",
-    },
-    {
-      name: "Amazon Web Services",
-      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored.svg",
-      darkPath:
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored-dark.svg",
-      iTag: "aws",
-      link: "https://aws.amazon.com",
-    },
-    {
       name: "Arduino",
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg",
       iTag: "arduino",
@@ -685,16 +726,18 @@ export const iconData = {
       link: "https://www.blender.org/",
     },
     {
-      name: "Digital Ocean",
-      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/digitalocean-colored.svg",
-      iTag: "digitalocean",
-      link: "https://www.digitalocean.com",
-    },
-    {
       name: "Docker",
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg",
       iTag: "docker",
       link: "https://www.docker.com/",
+    },
+    {
+      name: "Kubernetes",
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kubernetes-colored.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kubernetes-dark.svg",
+      iTag: "kubernetes",
+      link: "https://kubernetes.io/",
     },
     {
       name: "Linux",
@@ -980,6 +1023,7 @@ const initialState = {
     editors: [],
     frontend: [],
     backend: [],
+    mobile: [],
     software: [],
     web3: [],
     cloud: [],
@@ -990,22 +1034,19 @@ const initialState = {
   socials: {
     github: {
       path: `${PROJECT_URL}/icons/socials/github.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/github-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/github-dark.svg`,
       linkPrefix: "https://www.github.com/",
       linkSuffix: "",
     },
     twitter: {
       path: `${PROJECT_URL}/icons/socials/twitter.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/twitter-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/twitter-dark.svg`,
       linkPrefix: "https://www.x.com/",
       linkSuffix: "",
     },
     threads: {
       path: `${PROJECT_URL}/icons/socials/threads.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/threads-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/threads-dark.svg`,
       linkPrefix: "https://www.threads.net/@",
       linkSuffix: "",
     },
@@ -1018,22 +1059,19 @@ const initialState = {
     },
     medium: {
       path: `${PROJECT_URL}/icons/socials/medium.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/medium-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/medium-dark.svg`,
       linkPrefix: "http://www.medium.com/",
       linkSuffix: "",
     },
     devdotto: {
       path: `${PROJECT_URL}/icons/socials/devdotto.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/devdotto-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/devdotto-dark.svg`,
       linkPrefix: "https://www.dev.to/",
       linkSuffix: "",
     },
     linkedin: {
       path: `${PROJECT_URL}/icons/socials/linkedin.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/linkedin-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/linkedin-dark.svg`,
       linkPrefix: "https://www.linkedin.com/in/",
       linkSuffix: "",
     },
@@ -1069,8 +1107,7 @@ const initialState = {
     },
     facebook: {
       path: `${PROJECT_URL}/icons/socials/facebook.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/facebook-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/facebook-dark.svg`,
       linkPrefix: "https://www.facebook.com/",
       linkSuffix: "",
     },
@@ -1088,15 +1125,13 @@ const initialState = {
     },
     codesandbox: {
       path: `${PROJECT_URL}/icons/socials/codesandbox.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/codesandbox-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/codesandbox-dark.svg`,
       linkPrefix: "https://codesandbox.io/u/",
       linkSuffix: "",
     },
     codepen: {
       path: `${PROJECT_URL}/icons/socials/codepen.svg`,
-      darkPath:
-        `${PROJECT_URL}/icons/socials/codepen-dark.svg`,
+      darkPath: `${PROJECT_URL}/icons/socials/codepen-dark.svg`,
       linkPrefix: "https://www.codepen.io/",
       linkSuffix: "",
     },
